@@ -1,0 +1,1 @@
+m:publish("smartrelay" .. did .. "/sensors", sensors, 2, 0, nil)
