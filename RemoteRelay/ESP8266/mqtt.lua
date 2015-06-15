@@ -1,7 +1,7 @@
 did = "/1"
 DIDACK=false
 function connect(m)
-m:connect("cyberrelay.cloudapp.net", 1883, 0, 
+m:connect("[YOUR_MQTT_BROKER_DOMAIN_NAME]", 1883, 0, 
 function(conn) 
     print("connected") 
     m:subscribe("smartrelay" .. did,2, function(conn) print("subscribe success") end)
