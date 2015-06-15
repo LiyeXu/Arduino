@@ -34,6 +34,3 @@ m:on("message", function(conn, topic, data)
 end)
 
 connect(m)
-
-
-
