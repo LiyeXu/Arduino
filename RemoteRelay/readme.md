@@ -51,16 +51,26 @@ To make the operation commands reach to your device, a public accessible MQTT br
 Then we need to burn some code snippets into the device, so that this thing can response to our commands.
 
 - The latest NodeMCU firmwares can be found at [here](https://github.com/nodemcu/nodemcu-firmware);
-- And yes, you will need a piece of FTDI232 adapter to burn this firmware into ESP8266
-- Replace [YOUR_MQTT_BROKER_DOMAIN_NAME] with the VM domain name you setup in step 2
+- And yes, you will need a piece of FTDI232 adapter to burn this firmware into ESP8266;
+- Replace the literature **[YOUR\_MQTT\_BROKER\_DOMAIN\_NAME]** in mqtt.lua script file with the VM domain name you get from step 2;
 - Then use the [NodeMCU Studio](http://bbs.nodemcu.com/t/nodemcu-studio-ban-ben-geng-xin-wei-build20150111-update-to-version-build20150111/64) to upload all [LUA scripts](https://github.com/LiyeXu/Arduino/tree/master/RemoteRelay/ESP8266);
 - [Arduino sketches](https://github.com/LiyeXu/Arduino/tree/master/RemoteRelay/LCU) should be complied and uploaded to the Nano board. Depedency Libs can be found at [here](https://github.com/LiyeXu/Arduino/tree/master/RemoteRelay/Arduino%20Libs).
-
-
 
 ### 4. Setup WIFI ###
 If everything went well... we should be able to light up the broad and connect to its AP (**CyberRelay_1**) from a PC or a mobile device. Now with any TCP client you can send your Internet available WiFi credentials in the format of **[SSID]@pwd@[Password]** to **192.168.4.1:80**. There will be a double beep confirmation once the internet connection is setup.
 
 ### 5. MQTT Client ###
-Now with any MQTT client, you can connect to the VM 
+Now with any MQTT client, you can connect to the MQTT broker and send any commands below:
+
+- ir:recv1
+- ir:recv2
+- ir:recv3
+- ir:recv4
+- ir:send1
+- ir:send2
+- ir:send3
+- ir:send4
+- relay:on
+- relay:off
+
 
