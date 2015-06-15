@@ -42,7 +42,7 @@ Well, first of all, find and wire up all these things below:
 To make the operation commands reach to your device, a public accessible MQTT broker server must be setup first.
 
 - Setup a Linux VM in [Azure](http://azure.microsoft.com/en-us/services/virtual-machines/) or [AWS](https://docs.aws.amazon.com/zh_cn/AWSEC2/latest/UserGuide/EC2_GetStarted.html)
-- Install Erlang;
+- Install [Erlang](https://github.com/LiyeXu/Arduino/blob/master/RemoteRelay/Erlang.md);
 - Install [emqttd](https://github.com/emqtt/emqttd);
 - Setup ACL configuration file to enable MQTT topics: smartrelay/1, smartrelay/1/sensors;
 - Start up emqttd service.
