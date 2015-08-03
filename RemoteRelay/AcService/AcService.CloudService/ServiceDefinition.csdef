@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="AcService.CloudService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2014-06.2.4">
+  <WorkerRole name="AcService.WorkerRole" vmsize="ExtraSmall">
+    <ConfigurationSettings>
+      <Setting name="TurnOnCoolAbove" />
+      <Setting name="TurnOffCoolBelow" />
+      <Setting name="TurnOffWarmAbove" />
+      <Setting name="TurnOnWarmBelow" />
+      <Setting name="WorkingBegin" />
+      <Setting name="WorkingEnd" />
+    </ConfigurationSettings>
+  </WorkerRole>
+</ServiceDefinition>
